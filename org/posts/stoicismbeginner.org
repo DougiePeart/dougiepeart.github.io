@@ -16,7 +16,7 @@
 
 #+TOC: headlines
 
-* Source 1
+* Source
 Author: Matthew Van Natta
 Title: The Beginner's Guide to Stoicism
 Year: 2019
