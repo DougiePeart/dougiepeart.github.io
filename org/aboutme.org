@@ -1,7 +1,7 @@
 #+Title: About
 #+options: toc:nil
-#+HTML_HEAD: <link rel="stylesheet" href="../css/simple.css">
-#+export_file_name: ../content/about
+#+HTML_HEAD: <link rel="stylesheet" href="css/simple.css">
+#+export_file_name: ../about
 
 
 #+begin_export html
@@ -16,7 +16,7 @@
 
 Hi there! My name is Dougie Peart.
 
-[[file:~/docs/repos/dougiepeart.co.uk/images/me.png]]
+[[file:images/me.png]]
 
 I am interested in technology and open-source software, and I enjoy learning about and experimenting with new tools and platforms. But my interests go beyond that - I am also passionate about personal development, particularly in the realm of philosophy. I believe that by sharing our knowledge and resources, we can all grow and become the best versions of ourselves. That's why I've started this website - to share my personal projects and give you a glimpse into what I've been reading and learning. I hope you find my content interesting and thought-provoking, and that it inspires you to think more deeply about the world and your place in it.
 
