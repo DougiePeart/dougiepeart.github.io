@@ -22,3 +22,8 @@
 * Welcome :)
 
 
+#+begin_export html
+<footer>
+Footer
+</footer>
+#+end_export
