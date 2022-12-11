@@ -22,4 +22,3 @@
 * Welcome :)
 
 
-[[file:about.org][About]]
