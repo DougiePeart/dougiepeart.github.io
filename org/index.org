@@ -1,6 +1,6 @@
 #+title: Dougie Peart
-#+HTML_HEAD: <link rel="stylesheet" href="../css/simple.css">
-#+EXPORT_FILE_NAME: ../content/index
+#+HTML_HEAD: <link rel="stylesheet" href="css/simple.css">
+#+EXPORT_FILE_NAME: ../index
 #+options: toc:nil
 #+options: num:nil
 #+options: author:nil
