@@ -1,6 +1,6 @@
 #+title: Posts
 #+HTML_HEAD: <link rel="stylesheet" href="../../css/simple.css">
-#+EXPORT_FILE_NAME: ../../content/posts/index
+#+EXPORT_FILE_NAME: ../../posts/index
 #+options: toc:nil
 #+options: num:nil
 #+options: author:nil
@@ -24,10 +24,6 @@
 #+begin_export html
 <article class "link">
 <a href="thebeginnersguidetostoicism.html">Book Notes: The Beginner's guide to Stoicism</a>
-</article>
-#+end_export
-#+begin_export html
-<article class "link">
 <a href="howtohugos3website.html">How to build a cheap static site with AWS S3 and Hugo</a>
 </article>
 #+end_export
