@@ -24,6 +24,19 @@
 #+begin_export html
 <article class "link">
 <a href="thebeginnersguidetostoicism.html">Book Notes: The Beginner's guide to Stoicism</a>
+</article>
+#+end_export
+#+begin_export html
+<article class "link">
 <a href="howtohugos3website.html">How to build a cheap static site with AWS S3 and Hugo</a>
 </article>
+#+end_export
+
+
+#+begin_export html
+<li>
+<a href="thebeginnersguidetostoicism.html">Book Notes: The Beginner's guide to Stoicism</a>
+</li>
+<a href="howtohugos3website.html">How to build a cheap static site with AWS S3 and Hugo</a>
+</li>
 #+end_export
