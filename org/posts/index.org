@@ -1,0 +1,33 @@
+#+title: Posts
+#+HTML_HEAD: <link rel="stylesheet" href="../../css/simple.css">
+#+EXPORT_FILE_NAME: ../../content/posts/index
+#+options: toc:nil
+#+options: num:nil
+#+options: author:nil
+#+options: timestamp:nil
+#+options: html5-fancy:t
+
+
+
+#+begin_export html
+<header>
+<nav>
+<a href="../index.html">Home</a>
+<a href="index.html">Posts</a>
+<a href="../about.html">About</a>
+</nav>
+</header>
+#+end_export
+
+* Posts
+
+#+begin_export html
+<article class "link">
+<a href="thebeginnersguidetostoicism.html">Book Notes: The Beginner's guide to Stoicism</a>
+</article>
+#+end_export
+#+begin_export html
+<article class "link">
+<a href="howtohugos3website.html">How to build a cheap static site with AWS S3 and Hugo</a>
+</article>
+#+end_export

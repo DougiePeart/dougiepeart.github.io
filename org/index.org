@@ -1,0 +1,25 @@
+#+title: Dougie Peart
+#+HTML_HEAD: <link rel="stylesheet" href="../css/simple.css">
+#+EXPORT_FILE_NAME: ../content/index
+#+options: toc:nil
+#+options: num:nil
+#+options: author:nil
+#+options: timestamp:nil
+
+
+
+#+begin_export html
+<header>
+<nav>
+<a href="index.html">Home</a>
+<a href="posts/index.html">Posts</a>
+<a href="about.html">About</a>
+</nav>
+</header>
+#+end_export
+
+
+* Welcome :)
+
+
+[[file:about.org][About]]
