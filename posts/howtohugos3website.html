@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-12-11 Sun 17:02 -->
+<!-- 2022-12-11 Sun 18:40 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>How to build a cheap static site with AWS S3 and Hugo</title>
@@ -210,20 +210,20 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orga3c46fc">Introduction</a></li>
-<li><a href="#org58e73ef">Setting up the S3 Bucket</a></li>
-<li><a href="#org969aacc">Set up a user in IAM</a></li>
-<li><a href="#org5c7a47e">Installing the AWS CLI</a></li>
-<li><a href="#orge9d7a1f">Configuring Hugo</a></li>
-<li><a href="#org910c19f">Configuring your DNS record.</a></li>
-<li><a href="#orgb55e2c8">Adding a Certificate</a></li>
+<li><a href="#org9e9d37f">Introduction</a></li>
+<li><a href="#org545a618">Setting up the S3 Bucket</a></li>
+<li><a href="#org82819a2">Set up a user in IAM</a></li>
+<li><a href="#org7798f1b">Installing the AWS CLI</a></li>
+<li><a href="#org4b94cc1">Configuring Hugo</a></li>
+<li><a href="#orga02add0">Configuring your DNS record.</a></li>
+<li><a href="#org3229cc9">Adding a Certificate</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orga3c46fc" class="outline-2">
-<h2 id="orga3c46fc">Introduction</h2>
-<div class="outline-text-2" id="text-orga3c46fc">
+<div id="outline-container-org9e9d37f" class="outline-2">
+<h2 id="org9e9d37f">Introduction</h2>
+<div class="outline-text-2" id="text-org9e9d37f">
 <p>
 I&rsquo;ve been learning AWS recently while working towards getting the <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/">AWS Certified Solutions Architect - Associate</a> certification. Setting up a good personal website has been on my to-do list for a while so this seemed like a perfect opportunity to get some practical experience on the platform.
 </p>
@@ -242,15 +242,15 @@ I tried following a tutorial that involved pushing the code to CodeCommit, CodeP
 </div>
 </div>
 
-<div id="outline-container-org58e73ef" class="outline-2">
-<h2 id="org58e73ef">Setting up the S3 Bucket</h2>
-<div class="outline-text-2" id="text-org58e73ef">
+<div id="outline-container-org545a618" class="outline-2">
+<h2 id="org545a618">Setting up the S3 Bucket</h2>
+<div class="outline-text-2" id="text-org545a618">
 <p>
 Log into AWS and go into the S3 section then click &ldquo;Create bucket&rdquo;
 </p>
 
 
-<div id="org4f5a4d4" class="figure">
+<div id="org40b6e34" class="figure">
 <p><img src="../images/hugos3/createbucket.png" alt="createbucket.png" />
 </p>
 </div>
@@ -260,7 +260,7 @@ Name the bucket after your website (it doesn&rsquo;t need to be the site name, i
 </p>
 
 
-<div id="org0daa3fe" class="figure">
+<div id="orgfdb9d2e" class="figure">
 <p><img src="../images/hugos3/namebucket.png" alt="namebucket.png" />
 </p>
 </div>
@@ -270,7 +270,7 @@ Untick the &ldquo;Block all public access&rdquo; box and acknowledge the warning
 </p>
 
 
-<div id="org33181cf" class="figure">
+<div id="org5bf0e12" class="figure">
 <p><img src="../images/hugos3/selectbucket.png" alt="selectbucket.png" />
 </p>
 </div>
@@ -280,7 +280,7 @@ Once created, click into the bucket and then click into the properties tab.
 </p>
 
 
-<div id="org5f60b61" class="figure">
+<div id="orgd060c08" class="figure">
 <p><img src="../images/hugos3/selectproperties.png" alt="selectproperties.png" />
 </p>
 </div>
@@ -290,7 +290,7 @@ Scroll down to the bottom and select Edit on Static website hosting
 </p>
 
 
-<div id="org65eb436" class="figure">
+<div id="orgfbfd435" class="figure">
 <p><img src="../images/hugos3/selectstatichosting.png" alt="selectstatichosting.png" />
 </p>
 </div>
@@ -300,22 +300,22 @@ Enable static website hosting and enter the page file names index.html and error
 </p>
 
 
-<div id="org2af1078" class="figure">
+<div id="orge3aed1a" class="figure">
 <p><img src="../images/hugos3/editstatichosting.png" alt="editstatichosting.png" />
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org969aacc" class="outline-2">
-<h2 id="org969aacc">Set up a user in IAM</h2>
-<div class="outline-text-2" id="text-org969aacc">
+<div id="outline-container-org82819a2" class="outline-2">
+<h2 id="org82819a2">Set up a user in IAM</h2>
+<div class="outline-text-2" id="text-org82819a2">
 <p>
 Open the IAM dashboard and select users from the left-hand side. Select Add Users and add a user called &ldquo;hugo&rdquo; with access key as the credential type.
 </p>
 
 
-<div id="orgc510453" class="figure">
+<div id="org38280b2" class="figure">
 <p><img src="../images/hugos3/addhugouser.png" alt="addhugouser.png" />
 </p>
 </div>
@@ -325,7 +325,7 @@ Go to the next page and select Create Group. Create a group called &ldquo;hugo&r
 </p>
 
 
-<div id="org79ec83e" class="figure">
+<div id="org244e7bd" class="figure">
 <p><img src="../images/hugos3/addhugogroup.png" alt="addhugogroup.png" />
 </p>
 </div>
@@ -335,7 +335,7 @@ On the final page, you&rsquo;ll be given the Access Key ID and the Secret Access
 </p>
 
 
-<div id="org5047754" class="figure">
+<div id="orge9f670f" class="figure">
 <p><img src="../images/hugos3/hugoaccesskeys2.png" alt="hugoaccesskeys2.png" />
 </p>
 </div>
@@ -355,9 +355,9 @@ rEtNcvATlIyMsz+wZdiDCM//FSPZ2E0WMJl6dhlT
 </div>
 </div>
 
-<div id="outline-container-org5c7a47e" class="outline-2">
-<h2 id="org5c7a47e">Installing the AWS CLI</h2>
-<div class="outline-text-2" id="text-org5c7a47e">
+<div id="outline-container-org7798f1b" class="outline-2">
+<h2 id="org7798f1b">Installing the AWS CLI</h2>
+<div class="outline-text-2" id="text-org7798f1b">
 <p>
 Curl the installer file:
 </p>
@@ -378,7 +378,7 @@ Then configure the CLI with your credentials from earlier
 </p>
 
 
-<div id="org670e3b8" class="figure">
+<div id="org5f05c65" class="figure">
 <p><img src="../images/hugos3/awsconfigure2.png" alt="awsconfigure2.png" />
 </p>
 </div>
@@ -398,9 +398,9 @@ You&rsquo;ve now got the AWS CLI set up, now all that&rsquo;s left is to configu
 </div>
 </div>
 
-<div id="outline-container-orge9d7a1f" class="outline-2">
-<h2 id="orge9d7a1f">Configuring Hugo</h2>
-<div class="outline-text-2" id="text-orge9d7a1f">
+<div id="outline-container-org4b94cc1" class="outline-2">
+<h2 id="org4b94cc1">Configuring Hugo</h2>
+<div class="outline-text-2" id="text-org4b94cc1">
 <p>
 Inside your config.toml file for your Hugo site append the following:
 </p>
@@ -482,9 +482,9 @@ But you have to navigate to a stupid URL to see it :(
 </div>
 </div>
 
-<div id="outline-container-org910c19f" class="outline-2">
-<h2 id="org910c19f">Configuring your DNS record.</h2>
-<div class="outline-text-2" id="text-org910c19f">
+<div id="outline-container-orga02add0" class="outline-2">
+<h2 id="orga02add0">Configuring your DNS record.</h2>
+<div class="outline-text-2" id="text-orga02add0">
 <p>
 So, log into Cloudflare (assuming you&rsquo;ve set <a href="https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/">them up as your DNS provider</a>) and go into the DNS section.
 </p>
@@ -494,7 +494,7 @@ Ordinarily, you&rsquo;d set an A record here pointing to an IP address, but as I
 </p>
 
 
-<div id="org3ab9a9e" class="figure">
+<div id="org3557273" class="figure">
 <p><img src="../images/hugos3/cname_000.png" alt="cname_000.png" />
 </p>
 </div>
@@ -513,15 +513,15 @@ You should now be able to browse to your website and see your Hugo site :)
 </div>
 </div>
 
-<div id="outline-container-orgb55e2c8" class="outline-2">
-<h2 id="orgb55e2c8">Adding a Certificate</h2>
-<div class="outline-text-2" id="text-orgb55e2c8">
+<div id="outline-container-org3229cc9" class="outline-2">
+<h2 id="org3229cc9">Adding a Certificate</h2>
+<div class="outline-text-2" id="text-org3229cc9">
 <p>
 The final step. In Cloudflare, go into the SSL/TLS section on the left-hand side. In the overview, set it to Flexible.
 </p>
 
 
-<div id="orgc103b7e" class="figure">
+<div id="org6344c25" class="figure">
 <p><img src="../images/hugos3/sslflexible.png" alt="sslflexible.png" />
 </p>
 </div>
@@ -542,7 +542,7 @@ If you have any questions, feel free to email <a href="mailto:contact@dougiepear
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Dougie Peart</p>
-<p class="date">Created: 2022-12-11 Sun 17:02</p>
+<p class="date">Created: 2022-12-11 Sun 18:40</p>
 </div>
 </body>
 </html>

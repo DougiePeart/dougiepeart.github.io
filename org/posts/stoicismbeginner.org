@@ -1,6 +1,6 @@
 #+title: Book Notes: The Beginner's guide to Stoicism
 #+HTML_HEAD: <link rel="stylesheet" href="../../css/simple.css">
-#+EXPORT_FILE_NAME: ../../content/posts/thebeginnersguidetostoicism
+#+EXPORT_FILE_NAME: ../../posts/thebeginnersguidetostoicism
 #+options: num:nil
 #+options: toc:nil
 
@@ -16,7 +16,7 @@
 
 #+TOC: headlines
 
-* Source
+* Source 1
 Author: Matthew Van Natta
 Title: The Beginner's Guide to Stoicism
 Year: 2019
