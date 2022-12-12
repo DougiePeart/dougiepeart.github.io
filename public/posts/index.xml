@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Posts on Dougie Peart</title>
+    <link>https://dougiepeart.co.uk/posts/</link>
+    <description>Recent content in Posts on Dougie Peart</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>contact@dougiepeart.co.uk (Dougie Peart)</managingEditor>
+    <webMaster>contact@dougiepeart.co.uk (Dougie Peart)</webMaster>
+    <copyright>©2022, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 21 Aug 2022 20:51:00 +0100</lastBuildDate>
+    
+        <atom:link href="https://dougiepeart.co.uk/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Book Notes: The Beginner&#39;s guide to Stoicism</title>
+        <link>https://dougiepeart.co.uk/posts/book-notes-the-beginners-guide-to-stoicism/</link>
+        <pubDate>Sun, 21 Aug 2022 20:51:00 +0100</pubDate>
+        <author>contact@dougiepeart.co.uk (Dougie Peart)</author>
+        <atom:modified>Sun, 21 Aug 2022 20:51:00 +0100</atom:modified>
+        <guid>https://dougiepeart.co.uk/posts/book-notes-the-beginners-guide-to-stoicism/</guid>
+        <description>Source Author: Matthew Van Natta
+Title: The Beginner&amp;rsquo;s Guide to Stoicism
+Year: 2019
+Genre: Philosophy
+Rating: 9/10
+The Book in 3 Sentences This book introduces the tools one needs to deal with life&amp;rsquo;s challenges in a calm and composed manner. You already possess the keys to living a fulfilling and joyous life. Despite having been created centuries ago, its teachings still apply to modern life.
+Impressions I found it immensely useful.</description>
+        
+        <dc:creator>[Dougie Peart]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>book</category>
+            
+          
+            
+              <category>notes</category>
+            
+          
+            
+              <category>stoicism</category>
+            
+          
+            
+              <category>philosophy</category>
+            
+          
+            
+              <category>reading</category>
+            
+          
+        
+        
+          
+            
+              <category>reading</category>
+            
+          
+        
+        
+      </item>
+      
+      <item>
+        <title>How to build a cheap static site with AWS S3 and Hugo</title>
+        <link>https://dougiepeart.co.uk/posts/tutorial-how-to-build-a-cheap-static-site-with-aws-s3-and-hugo/</link>
+        <pubDate>Fri, 19 Aug 2022 19:56:00 +0100</pubDate>
+        <author>contact@dougiepeart.co.uk (Dougie Peart)</author>
+        <atom:modified>Fri, 19 Aug 2022 19:56:00 +0100</atom:modified>
+        <guid>https://dougiepeart.co.uk/posts/tutorial-how-to-build-a-cheap-static-site-with-aws-s3-and-hugo/</guid>
+        <description>Introduction I&amp;rsquo;ve been learning AWS recently while working towards getting the AWS Certified Solutions Architect - Associate certification. Setting up a good personal website has been on my to-do list for a while so this seemed like a perfect opportunity to get some practical experience on the platform.
+I looked at the pricing as I had first considered running an EC2 instance, but I then saw that Lightsail instances were a lot cheaper.</description>
+        
+        <dc:creator>[Dougie Peart]</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>AWS</category>
+            
+          
+            
+              <category>linux</category>
+            
+          
+            
+              <category>hugo</category>
+            
+          
+            
+              <category>S3</category>
+            
+          
+            
+              <category>website</category>
+            
+          
+        
+        
+          
+            
+              <category>tutorial</category>
+            
+          
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
