@@ -1,0 +1,5 @@
+#+title: Readme
+
+* Hugo workflow
+
+Edit all-posts.org, add a post as a Heading. Once you're done with it, mark it as Done and do org-export H H then in the terminal do "hugo && hugo deploy"

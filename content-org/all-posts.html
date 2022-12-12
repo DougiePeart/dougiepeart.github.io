@@ -1,0 +1,1379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-10-03 Mon 10:30 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hugo posts</title>
+<meta name="author" content="Dougie Peart" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Hugo posts</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgefa4038">1. <span class="done DONE">DONE</span> How To Build A Cheap Static Website With AWS S3&#xa0;&#xa0;&#xa0;<span class="tag"><span class="AWS">AWS</span>&#xa0;<span class="linux">linux</span>&#xa0;<span class="hugo">hugo</span>&#xa0;<span class="S3">S3</span>&#xa0;<span class="website">website</span>&#xa0;<span class="_tutorial">@tutorial</span></span></a>
+<ul>
+<li><a href="#orgaefd991">1.1. Introduction</a></li>
+<li><a href="#org31075da">1.2. Setting up the S3 Bucket</a></li>
+<li><a href="#org2a6943f">1.3. Set up a user in IAM</a></li>
+<li><a href="#org0e7b854">1.4. Installing the AWS CLI</a></li>
+<li><a href="#org108582a">1.5. Configuring Hugo</a></li>
+<li><a href="#orgac59797">1.6. Configuring your DNS record.</a></li>
+<li><a href="#orgc7b5acd">1.7. Adding a Certificate</a></li>
+</ul>
+</li>
+<li><a href="#org6c38d87">2. <span class="done DONE">DONE</span> Book Notes: The Beginner&rsquo;s guide to Stoicism&#xa0;&#xa0;&#xa0;<span class="tag"><span class="book">book</span>&#xa0;<span class="notes">notes</span>&#xa0;<span class="stoicism">stoicism</span>&#xa0;<span class="philosophy">philosophy</span>&#xa0;<span class="reading">reading</span>&#xa0;<span class="_reading">@reading</span></span></a>
+<ul>
+<li><a href="#orgadc3227">2.1. Source</a></li>
+<li><a href="#orgf6c1ea3">2.2. The Book in 3 Sentences</a></li>
+<li><a href="#org67ba6c4">2.3. Impressions</a></li>
+<li><a href="#org1f4926f">2.4. Who Should Read it?</a></li>
+<li><a href="#org473bbc6">2.5. How the Book Changed Me</a></li>
+<li><a href="#org711f7ae">2.6. My Top 3 Quotes</a></li>
+<li><a href="#org66ad4eb">2.7. Summary + Notes</a>
+<ul>
+<li><a href="#org96cb87d">2.7.1. Myths and Misconceptions</a></li>
+<li><a href="#org5f958af">2.7.2. Living In Accordance With Nature</a></li>
+<li><a href="#orge819464">2.7.3. The Three Stoic Disciplines</a></li>
+<li><a href="#org835c96a">2.7.4. The Four Stoic Virtues</a></li>
+<li><a href="#org82ad8fb">2.7.5. Rules To Live By - Page 19</a></li>
+<li><a href="#org21bb58f">2.7.6. A Pythagorean Practice - Page 32</a></li>
+<li><a href="#org6df832e">2.7.7. Socrates&rsquo;s Views Adopted Into Stoicism - Page 33</a></li>
+<li><a href="#org024a0fa">2.7.8. Essential Tools</a></li>
+<li><a href="#org5fded1d">2.7.9. Seneca&rsquo;s Description of Stoicism</a></li>
+<li><a href="#org4a46586">2.7.10. What DO You Control?</a></li>
+<li><a href="#org6ee50bf">2.7.11. Before You Sleep</a></li>
+<li><a href="#org28068fc">2.7.12. The Stoic Passions</a></li>
+<li><a href="#org7872bcb">2.7.13. What Is So Unbearable About This Moment?</a></li>
+<li><a href="#orgbf7f409">2.7.14. It Seemed So to Them</a></li>
+<li><a href="#org61197ee">2.7.15. Creating Change</a></li>
+<li><a href="#org320ba39">2.7.16. Establish A Daily Routine</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgefa4038" class="outline-2">
+<h2 id="orgefa4038"><span class="section-number-2">1.</span> <span class="done DONE">DONE</span> How To Build A Cheap Static Website With AWS S3&#xa0;&#xa0;&#xa0;<span class="tag"><span class="AWS">AWS</span>&#xa0;<span class="linux">linux</span>&#xa0;<span class="hugo">hugo</span>&#xa0;<span class="S3">S3</span>&#xa0;<span class="website">website</span>&#xa0;<span class="_tutorial">@tutorial</span></span></h2>
+<div class="outline-text-2" id="text-1">
+</div>
+
+<div id="outline-container-orgaefd991" class="outline-3">
+<h3 id="orgaefd991"><span class="section-number-3">1.1.</span> Introduction</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+I&rsquo;ve been learning AWS recently while working towards getting the <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/">AWS Certified Solutions Architect - Associate</a> certification. Setting up a good personal website has been on my to-do list for a while so this seemed like a perfect opportunity to get some practical experience on the platform.
+</p>
+
+<p>
+I looked at the pricing as I had first considered running an EC2 instance, but I then saw that Lightsail instances were a lot cheaper. They&rsquo;re essentially just like a VPS on any other cloud platform. I spun up an instance and selected the WordPress template maintained by Bitnami.
+</p>
+
+<p>
+I had a website up and running really quickly, but on reflection, WordPress seemed a little bloated. I use Emacs as my editor of choice, so using <a href="https://gohugo.io/">Hugo</a> with the <a href="https://ox-hugo.scripter.co/">ox-hugo</a> package seemed a perfect fit.
+</p>
+
+<p>
+I tried following a tutorial that involved pushing the code to CodeCommit, CodePipeline would pick up the change and then kick off a build with CodeBuild to run Hugo and sync the public folder to an S3 bucket. It was a cool <a href="https://conormclaughlin.net/2017/11/automating-deployment-of-your-hugo-site-to-s3-using-aws-codepipeline/">tutorial</a> and quite a novel solution, but it failed a few times for me when running Hugo in the build job. I was looking through the Hugo documentation to see where I was going wrong when I noticed the &ldquo;hugo deploy&rdquo; command. This command just uploads the public directory to an S3 bucket for you!
+</p>
+</div>
+</div>
+
+<div id="outline-container-org31075da" class="outline-3">
+<h3 id="org31075da"><span class="section-number-3">1.2.</span> Setting up the S3 Bucket</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Log into AWS and go into the S3 section then click &ldquo;Create bucket&rdquo;
+</p>
+
+
+<div id="org3ed1365" class="figure">
+<p><img src="../images/hugos3/createbucket.png" alt="createbucket.png" />
+</p>
+</div>
+
+<p>
+Name the bucket after your website (it doesn&rsquo;t need to be the site name, it can say anything) and select an AWS region, I&rsquo;m going for eu-west-2 because it&rsquo;s close to me.
+</p>
+
+
+<div id="orgff49dc5" class="figure">
+<p><img src="../images/hugos3/namebucket.png" alt="namebucket.png" />
+</p>
+</div>
+
+<p>
+Untick the &ldquo;Block all public access&rdquo; box and acknowledge the warning at the bottom of that section. See the image above for all the settings I&rsquo;ve used. Once you&rsquo;re happy, scroll to the bottom and select &ldquo;Create bucket&rdquo;
+</p>
+
+
+<div id="org3295bc7" class="figure">
+<p><img src="../images/hugos3/selectbucket.png" alt="selectbucket.png" />  
+</p>
+</div>
+
+<p>
+Once created, click into the bucket and then click into the properties tab.
+</p>
+
+
+<div id="orgf9db65d" class="figure">
+<p><img src="../images/hugos3/selectproperties.png" alt="selectproperties.png" />
+</p>
+</div>
+
+<p>
+Scroll down to the bottom and select Edit on Static website hosting
+</p>
+
+
+<div id="orgb097b39" class="figure">
+<p><img src="../images/hugos3/selectstatichosting.png" alt="selectstatichosting.png" />
+</p>
+</div>
+
+<p>
+Enable static website hosting and enter the page file names index.html and error.html respectively. when you&rsquo;re done save the changes.
+</p>
+
+
+<div id="org884abae" class="figure">
+<p><img src="../images/hugos3/editstatichosting.png" alt="editstatichosting.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2a6943f" class="outline-3">
+<h3 id="org2a6943f"><span class="section-number-3">1.3.</span> Set up a user in IAM</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Open the IAM dashboard and select users from the left-hand side. Select Add Users and add a user called &ldquo;hugo&rdquo; with access key as the credential type.
+</p>
+
+
+<div id="orgd58f8c3" class="figure">
+<p><img src="../images/hugos3/addhugouser.png" alt="addhugouser.png" />
+</p>
+</div>
+
+<p>
+Go to the next page and select Create Group. Create a group called &ldquo;hugo&rdquo;, search for s3 in the policies and check the box for AmazonS3FullAccess, then select Create Group. Next click into Tags, add any tags you like, click into Review and when you&rsquo;re happy, create the user.
+</p>
+
+
+<div id="org2c90c2b" class="figure">
+<p><img src="../images/hugos3/addhugogroup.png" alt="addhugogroup.png" />
+</p>
+</div>
+
+<p>
+On the final page, you&rsquo;ll be given the Access Key ID and the Secret Access Key
+</p>
+
+
+<div id="orgfd900d5" class="figure">
+<p><img src="../images/hugos3/hugoaccesskeys2.png" alt="hugoaccesskeys2.png" />
+</p>
+</div>
+
+
+<p>
+Take a note of these for later and don&rsquo;t share them with anyone:
+</p>
+
+<pre class="example">
+Access Key ID:
+AKIA4QJB6VGADXAFZ3RZ
+
+Secret Access Key:
+rEtNcvATlIyMsz+wZdiDCM//FSPZ2E0WMJl6dhlT
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org0e7b854" class="outline-3">
+<h3 id="org0e7b854"><span class="section-number-3">1.4.</span> Installing the AWS CLI</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+Curl the installer file:
+</p>
+
+<pre class="example">
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"\
+unzip awscliv2.zip\
+</pre>
+
+<p>
+Run the installer:
+</p>
+<pre class="example">
+sudo ./aws/install
+</pre>
+<p>
+Then configure the CLI with your credentials from earlier
+</p>
+
+
+<div id="org3cb76b9" class="figure">
+<p><img src="../images/hugos3/awsconfigure2.png" alt="awsconfigure2.png" />
+</p>
+</div>
+
+<p>
+You should now be able to interact with your AWS subscription. Try running &ldquo;aws s3 ls&rdquo; and you should see the bucket you&rsquo;ve created.
+</p>
+
+<pre class="example">
+[username@hostname]$ aws s3 ls
+2022-08-19 21:36:22 dougiepeart.co.uk
+</pre>
+
+<p>
+You&rsquo;ve now got the AWS CLI set up, now all that&rsquo;s left is to configure Hugo to push to your bucket (and configure your Hugo site, but that&rsquo;s beyond the scope of this tutorial).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org108582a" class="outline-3">
+<h3 id="org108582a"><span class="section-number-3">1.5.</span> Configuring Hugo</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+Inside your config.toml file for your Hugo site append the following:
+</p>
+
+<pre class="example">
+[deployment]
+  [[deployment.targets]]
+    name = "aws-s3"
+    URL= "s3://dougiepeart.co.uk?region=eu-west-2"
+  
+  [[deployment.matchers]]
+    # Cache static assets for 1 year.
+    pattern = "^.+\\.(js|css|svg|ttf)$"
+    cacheControl = "max-age=31536000, no-transform, public"
+    gzip = true
+  
+  [[deployment.matchers]]
+    pattern = "^.+\\.(png|jpg)$"
+    cacheControl = "max-age=31536000, no-transform, public"
+    gzip = false
+  
+  [[deployment.matchers]]
+    # Set custom content type for /sitemap.xml
+    pattern = "^sitemap\\.xml$"
+    contentType = "application/xml"
+    gzip = true
+  
+  [[deployment.matchers]]
+    pattern = "^.+\\.(html|xml|json)$"
+    gzip = true
+</pre>
+
+<p>
+Obviously, change the S3 URL to your bucket name and selected region though.
+</p>
+
+<p>
+Congratulations you&rsquo;ve got everything you need to push your site from your machine to S3!
+</p>
+
+<p>
+cd into your websites directory and run:
+</p>
+
+<pre class="example">
+~/docs/repos/dougiepeart.co.uk $ hugo &amp;&amp; hugo deploy
+Start building sites … 
+hugo v0.101.0+extended linux/amd64 BuildDate=unknown
+
+                   | KO | EN  
+-------------------+----+-----
+  Pages            | 13 | 49  
+  Paginator pages  |  0 |  0  
+  Non-page files   |  0 |  0  
+  Static files     | 80 | 80  
+  Processed images |  0 |  0  
+  Aliases          |  2 | 10  
+  Sitemaps         |  2 |  1  
+  Cleaned          |  0 |  0  
+
+Total in 5708 ms
+Deploying to target "aws-s3" (s3://dougiepeart.co.uk?region=eu-west-2)
+Identified 22 file(s) to upload, totaling 290 kB, and 0 file(s) to delete.
+Success!
+Success!
+</pre>
+
+<p>
+You&rsquo;ve now got your site in a publicly accessible S3 bucket :)
+</p>
+
+<p>
+You can find the URL in the bucket&rsquo;s properties under the Static website section
+</p>
+
+<p>
+But you have to navigate to a stupid URL to see it :(
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgac59797" class="outline-3">
+<h3 id="orgac59797"><span class="section-number-3">1.6.</span> Configuring your DNS record.</h3>
+<div class="outline-text-3" id="text-1-6">
+<p>
+So, log into Cloudflare (assuming you&rsquo;ve set <a href="https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/">them up as your DNS provider</a>) and go into the DNS section.
+</p>
+
+<p>
+Ordinarily, you&rsquo;d set an A record here pointing to an IP address, but as I&rsquo;m sure you&rsquo;ve noticed, AWS didn&rsquo;t allocate us one. Not to worry though, you don&rsquo;t need an A record, you can just use a CNAME.
+</p>
+
+
+<div id="orga5ef435" class="figure">
+<p><img src="../images/hugos3/cname_000.png" alt="cname_000.png" />
+</p>
+</div>
+
+<p>
+You can just use @ for the name here, but I&rsquo;ve set it as dougiepeart.co.uk for clarity.
+</p>
+
+<p>
+Paste in your S3 URL and ensure it is set to proxied as you&rsquo;ll be using this for your SSL certificate.
+</p>
+
+<p>
+You should now be able to browse to your website and see your Hugo site :)
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc7b5acd" class="outline-3">
+<h3 id="orgc7b5acd"><span class="section-number-3">1.7.</span> Adding a Certificate</h3>
+<div class="outline-text-3" id="text-1-7">
+<p>
+The final step. In Cloudflare, go into the SSL/TLS section on the left-hand side. In the overview, set it to Flexible.
+</p>
+
+
+<div id="org83cc02f" class="figure">
+<p><img src="../images/hugos3/sslflexible.png" alt="sslflexible.png" />
+</p>
+</div>
+
+<p>
+If you reload your website, you should now have a secure connection.
+</p>
+
+<p>
+That&rsquo;s it. You now have super cheap and fast hosting for your static website.
+</p>
+
+<p>
+If you have any questions, feel free to email <a href="mailto:contact@dougiepeart.co.uk">me</a>.
+</p>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org6c38d87" class="outline-2">
+<h2 id="org6c38d87"><span class="section-number-2">2.</span> <span class="done DONE">DONE</span> Book Notes: The Beginner&rsquo;s guide to Stoicism&#xa0;&#xa0;&#xa0;<span class="tag"><span class="book">book</span>&#xa0;<span class="notes">notes</span>&#xa0;<span class="stoicism">stoicism</span>&#xa0;<span class="philosophy">philosophy</span>&#xa0;<span class="reading">reading</span>&#xa0;<span class="_reading">@reading</span></span></h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgadc3227" class="outline-3">
+<h3 id="orgadc3227"><span class="section-number-3">2.1.</span> Source</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Author: Matthew Van Natta
+Title: The Beginner&rsquo;s Guide to Stoicism
+Year: 2019
+Genre: Philosophy
+Rating: 9/10
+</p>
+</div>
+</div>
+<div id="outline-container-orgf6c1ea3" class="outline-3">
+<h3 id="orgf6c1ea3"><span class="section-number-3">2.2.</span> The Book in 3 Sentences</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+This book introduces the tools one needs to deal with life&rsquo;s challenges in a calm and composed manner. You already possess the keys to living a fulfilling and joyous life. Despite having been created centuries ago, its teachings still apply to modern life.
+</p>
+</div>
+</div>
+<div id="outline-container-org67ba6c4" class="outline-3">
+<h3 id="org67ba6c4"><span class="section-number-3">2.3.</span> Impressions</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+I found it immensely useful. It is packed with information that you can put to use straight away. It has taken me quite a while to compile my notes for it, but it was worth it.
+</p>
+</div>
+</div>
+<div id="outline-container-org1f4926f" class="outline-3">
+<h3 id="org1f4926f"><span class="section-number-3">2.4.</span> Who Should Read it?</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+I think it could benefit every person to read. However, I would highly recommend it to those like myself, who overthink most things in life and are looking for a way to overcome that habit.
+</p>
+</div>
+</div>
+<div id="outline-container-org473bbc6" class="outline-3">
+<h3 id="org473bbc6"><span class="section-number-3">2.5.</span> How the Book Changed Me</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+I have been applying this in my life for a few weeks now and as overused as this phrase is, it has been life changing for me. I feel like I finally have control and that I can appreciate life for what it is. I am embracing my fate.
+</p>
+
+<p>
+It is the first book I have taken detailed notes on since school, I think that says a lot about its effect on me.
+</p>
+</div>
+</div>
+<div id="outline-container-org711f7ae" class="outline-3">
+<h3 id="org711f7ae"><span class="section-number-3">2.6.</span> My Top 3 Quotes</h3>
+<div class="outline-text-3" id="text-2-6">
+<blockquote>
+<p>
+&ldquo;Your mind is yours-and yours alone. If you focus on healthy thoughts and develop balance opinions about your situation, you will cultivate positive emotions and find lasting enthusiasm to live your best life. You will see negativity for what it is: a waste of your energy.&rdquo;
+</p>
+
+<p>
+&#x2013; Matthew J. Van Natta, The Beginner&rsquo;s Guide to Stoicism, Page 19
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+&ldquo;If you have received an impression of any pleasure, guard yourself and create a delay. Then think of the time you will enjoy the pleasure, and the time after, when you will repent and be disappointed with yourself. On the other side, imagine your happiness if you resist the temptation and get to commend yourself for the victory.&rdquo;
+</p>
+
+<p>
+&#x2013; Epictetus, Enchiridion 34
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+&ldquo;The only possession the wise person has is virtue, and of this they can never be robbed. Of all else they have merely the use on loan.&rdquo;
+</p>
+
+<p>
+&#x2013; Seneca, On the Firmness of the Wise Man
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org66ad4eb" class="outline-3">
+<h3 id="org66ad4eb"><span class="section-number-3">2.7.</span> Summary + Notes</h3>
+<div class="outline-text-3" id="text-2-7">
+</div>
+<div id="outline-container-org96cb87d" class="outline-4">
+<h4 id="org96cb87d"><span class="section-number-4">2.7.1.</span> Myths and Misconceptions</h4>
+<div class="outline-text-4" id="text-2-7-1">
+<p>
+The Stoics often dealt with Stoicism being misunderstood as being a cold philosophy. They were mistaken to be cold and unfeeling. However, Stoics taught that no one should strive to be an unfeeling statue.
+</p>
+
+<p>
+Living a virtuous life leads to living a life rich with emotion. Embracing the positive, whilst quickly overcoming the negative.
+</p>
+
+<p>
+Passivity is another common mischaracterisation. Stoics believe you can thrive in any situation, it teaches acceptance of the world as it is. A love of one&rsquo;s fate. Amor Fati. This can be confused with Apathy. &ldquo;Why change,&rdquo; they say, &ldquo;if one can be happy even in the worst of life&rsquo;s storms?&rdquo;. It may seem paradoxical, but Stoic acceptance gives one the strength to overcome life&rsquo;s challenges. When a rude person makes aggressive demands, the Stoic accepts that the person in front of them is being hostile, but they can choose how to respond. If the rude person&rsquo;s demands are unjust, the Stoic works for justice.
+</p>
+
+<p>
+When you direct your attention toward that which you can control, your actions become well-aimed and effective.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5f958af" class="outline-4">
+<h4 id="org5f958af"><span class="section-number-4">2.7.2.</span> Living In Accordance With Nature</h4>
+<div class="outline-text-4" id="text-2-7-2">
+<blockquote>
+<p>
+&ldquo;When you are going to take in hand any act, remind yourself what kind of an act it is. If you are going to bathe, place before yourself what happens in the bath: some splashing the water, others pushing against one another, others abusing one another, and some stealing: and thus with more safety you will undertake the matter, if you say to yourself, I now intend to bathe, and to maintain my will in a manner conformable to nature. And so you will do in every act: for thus if any hindrance to bathing shall happen, let this thought be ready: it was not this only that I intended, but I intended also to maintain my will in a way conformable to nature; but I shall not maintain it so, if I am vexed at what happens.&rdquo;
+</p>
+
+<p>
+&#x2013; Epictetus, Enchiridion 4
+</p>
+</blockquote>
+</div>
+</div>
+<div id="outline-container-orge819464" class="outline-4">
+<h4 id="orge819464"><span class="section-number-4">2.7.3.</span> The Three Stoic Disciplines</h4>
+<div class="outline-text-4" id="text-2-7-3">
+</div>
+<ol class="org-ol">
+<li><a id="org176fac2"></a>The Discipline of Desire<br />
+<div class="outline-text-5" id="text-2-7-3-1">
+<p>
+Aligning your values to only desire only that which is in your control.
+</p>
+</div>
+</li>
+<li><a id="org682abe1"></a>The Discipline of Action<br />
+<div class="outline-text-5" id="text-2-7-3-2">
+<p>
+Aim to seek healthy and positive relationships with everyone you meet, even knowing that they may not reciprocate. 
+</p>
+</div>
+</li>
+<li><a id="orgd2376dc"></a>The Discipline of Assent<br />
+<div class="outline-text-5" id="text-2-7-3-3">
+<p>
+Separating your initial reactions to the world from your final judgements about the world. Evaluate your thoughts to align with wisdom.
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org835c96a" class="outline-4">
+<h4 id="org835c96a"><span class="section-number-4">2.7.4.</span> The Four Stoic Virtues</h4>
+<div class="outline-text-4" id="text-2-7-4">
+</div>
+<ol class="org-ol">
+<li><a id="orge2f3170"></a>Wisdom<br />
+<div class="outline-text-5" id="text-2-7-4-1">
+<p>
+Wisdom is most closely associated with the Discipline of Assent. It can be subdivided into the following:
+</p>
+
+<ul class="org-ul">
+<li>Good Sense</li>
+<li>Good Calculation</li>
+<li>Quick-wittedness</li>
+<li>Discretion</li>
+<li>Resourcefulness</li>
+</ul>
+
+<p>
+The primary role of Wisdom is to lead you to good; to focus your attention on healthy thoughts, opinions, desires, and aversions. It requires constant attention. Practising wisdom requires you to understand that you aren&rsquo;t required to accept the first reaction that comes to mind. You must instead build a bridge between your reaction and your final action.
+</p>
+
+<blockquote>
+<p>
+&ldquo;The science of what ought or ought not to be done.&rdquo;
+</p>
+
+<p>
+&#x2013; Pierre Hadot
+</p>
+</blockquote>
+</div>
+</li>
+<li><a id="org5a03d15"></a>Courage<br />
+<div class="outline-text-5" id="text-2-7-4-2">
+<p>
+Courage is mastery over your fears. It stands in opposition to cowardice. Courage is one of the two virtues that are linked to the Discipline of Desire. If you no longer focus your desires and aversions towards the external world but instead strive for virtue, you will unleash the power to act against the intolerable. The Stoics break Courage down into the following:
+</p>
+
+<ul class="org-ul">
+<li>Endurance</li>
+<li>Confidence</li>
+<li>High-mindedness</li>
+<li>Cheerfulness</li>
+<li>Industriousness</li>
+</ul>
+
+<blockquote>
+<p>
+&ldquo;The science of what ought or ought not be tolerated.&rdquo;
+</p>
+
+<p>
+&#x2013; Pierre Hadot
+</p>
+</blockquote>
+</div>
+</li>
+<li><a id="orgb34288b"></a>Justice<br />
+<div class="outline-text-5" id="text-2-7-4-3">
+<p>
+Justice relates to the Discipline of Action. Justice is not a direct translation of our definition of Justice (to abide by the law). It can be more easily understood as <i>morality</i>. It encompasses all of our interactions with others. Stoicism teaches that all people are valuable and that we are meant to work together. Stoic Justice helps you to work with others, even if they are opposed to it.
+</p>
+
+<blockquote>
+<p>
+&ldquo;He who is running a race ought to endeavour and strive to the utmost of his ability to come off victor; but it is utterly wrong for him to trip up his competitor, or to push him aside. So in life it is not unfair for one to seek for himself what may accrue to his benefit; but it is not right to take it from another.&rdquo;
+</p>
+
+
+<p>
+&#x2013;Chrysippus
+As quoted in De Officiis by Cicero, iii. 10.
+</p>
+</blockquote>
+
+<p>
+As Marcus Aurelius puts it:
+</p>
+
+<blockquote>
+<p>
+&ldquo;We were born to work together like feet, hands and eyes, like the two rows of teeth, upper and lower. To obstruct each other is unnatural. To feel anger at someone, to turn your back on him: these are unnatural.&rdquo;
+</p>
+
+<p>
+&#x2013; Marcus Aurelius, Meditations, 2:1
+</p>
+</blockquote>
+<p>
+Justice can be broken down into:
+</p>
+
+<ul class="org-ul">
+<li>Honesty</li>
+<li>Equity</li>
+<li>Fairness</li>
+<li>Goodwill</li>
+<li>Benevolence</li>
+<li>Kindness</li>
+</ul>
+
+<blockquote>
+<p>
+&ldquo;The science of what ought or ought not be disturbed.&rdquo;
+</p>
+
+<p>
+&#x2013; Pierre Hadot
+</p>
+</blockquote>
+</div>
+</li>
+<li><a id="org557eef3"></a>Temperance (Moderation)<br />
+<div class="outline-text-5" id="text-2-7-4-4">
+<p>
+Temperance is control over one&rsquo;s desires and, along with Courage, it is an expected outcome of practising the Discipline of Desire. Moderation stands in opposition to excess. If you desire only virtue, then you can be reasonable in what you want and generous with what you have been given. Moderation can be divided into:
+</p>
+
+<ul class="org-ul">
+<li>Appropriateness</li>
+<li>Modesty</li>
+<li>Self-control</li>
+</ul>
+
+<blockquote>
+<p>
+&ldquo;The Stoics viewed life as a banquet. Picture yourself at a party where the host went all out with the food and drink. Imagine expensive wines, mouthwatering dishes, and decadent desserts. Everyone’s grabbing plates and glasses and heading over to get their fill. How are you going to act? Are you going to pile your plate high so you don’t miss out on anything? Will you fill up your glass knowing there’s not enough of that particular wine for everyone to try? If you miss out on the dessert you had your eye on, will it ruin your night? If you get to it in time, will you take so much that others don’t get to enjoy it? Epictetus says that a Stoic won’t desire that dessert before they have it and therefore won’t be disturbed if they never get it. If the dessert does arrive, they won’t take so much that others will be left without. Also, if they really grasp Stoicism, they might choose to let the dessert pass even though it arrives. That Stoic, Epictetus claims, is worthy of ruling with the gods! The banquet metaphor is meant to apply to all of your interactions. If you direct your desire toward being your best self, you won’t focus on getting things, but on using the things you already have.&rdquo;
+</p>
+
+<p>
+&#x2013; Matthew J. Van Natta, The Beginner&rsquo;s Guide to Stoicism, Page 76
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+&ldquo;The science of what ought or ought not to be chosen.&rdquo;
+</p>
+
+<p>
+&#x2013; Pierre Hadot
+</p>
+</blockquote>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org82ad8fb" class="outline-4">
+<h4 id="org82ad8fb"><span class="section-number-4">2.7.5.</span> Rules To Live By - Page 19</h4>
+<div class="outline-text-4" id="text-2-7-5">
+<blockquote>
+<p>
+&ldquo;Your mind is yours-and yours alone. If you focus on healthy thoughts and develop balance opinions about your situation, you will cultivate positive emotions and find lasting enthusiasm to live your best life. You will see negativity for what it is: a waste of your energy.&rdquo;
+</p>
+
+<p>
+&#x2013; Matthew J. Van Natta, The Beginner&rsquo;s Guide to Stoicism, Page 19
+</p>
+</blockquote>
+
+<p>
+Rarely do people notice that you&rsquo;re annoyed with them. So what is the use of being annoyed?
+</p>
+</div>
+</div>
+
+<div id="outline-container-org21bb58f" class="outline-4">
+<h4 id="org21bb58f"><span class="section-number-4">2.7.6.</span> A Pythagorean Practice - Page 32</h4>
+<div class="outline-text-4" id="text-2-7-6">
+<p>
+The Stoics particularly enjoyed a Pythagorean practice that asks you to review your day by asking
+</p>
+
+<ul class="org-ul">
+<li>What have I done wrong?</li>
+<li>What have I done well?</li>
+<li>What have I left that must be done tomorrow?</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6df832e" class="outline-4">
+<h4 id="org6df832e"><span class="section-number-4">2.7.7.</span> Socrates&rsquo;s Views Adopted Into Stoicism - Page 33</h4>
+<div class="outline-text-4" id="text-2-7-7">
+<ul class="org-ul">
+<li>No one desires to do evil</li>
+<li>No one makes a mistake willingly</li>
+<li>Virtue is sufficient for happiness</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org024a0fa" class="outline-4">
+<h4 id="org024a0fa"><span class="section-number-4">2.7.8.</span> Essential Tools</h4>
+<div class="outline-text-4" id="text-2-7-8">
+</div>
+<ol class="org-ol">
+<li><a id="orgd07daa1"></a>Circle The Present<br />
+<div class="outline-text-5" id="text-2-7-8-1">
+<blockquote>
+<p>
+&ldquo;Then remind yourself that past and future have no power over you. Only the present - and even that can be minimized. Just mark off its limits.&rdquo;
+</p>
+
+<p>
+&#x2013; Marcus Aurelius, Meditations 8:36
+</p>
+</blockquote>
+<blockquote>
+<p>
+&ldquo;Mark off its limits,&rdquo; references a practice called circling the present. It provides a way to relieve stress, catastrophic thinking, and other anxieties. To do this, you only allow yourself to dwell on the present, essentially fencing yourself off from the future and the past. Take a breath. Draw your attention to the present moment. The past is finished. The future is unknowable. Leave anxieties about the future alone; they solely exist in your imagination. You can only act in the present.&ldquo;
+</p>
+
+<p>
+&#x2013; Matthew J. Van Natta, The Beginner&rsquo;s Guide to Stoicism, Page 45
+</p>
+</blockquote>
+</div>
+</li>
+
+<li><a id="org589750b"></a>Infinite Opportunity<br />
+<div class="outline-text-5" id="text-2-7-8-2">
+<blockquote>
+<p>
+&ldquo;When your desires and aversions are things or situations, you will think of moments that don&rsquo;t provide what you want or moments that confront you with things you&rsquo;d avoid as &lsquo;bad.&rsquo; If you stop focusing on outcomes- but instead desire being your best at every moment- you&rsquo;ll understand that every situation provides an opportunity to practice virtue.
+</p>
+
+<p>
+When confronted by a challenge, ask yourself:
+</p>
+
+<ul class="org-ul">
+<li>How can I benefit from this?</li>
+<li>What virtue can I draw on to meet this moment?&ldquo;</li>
+</ul>
+
+<p>
+&#x2013; Matthew J. Van Natta, The Beginner&rsquo;s Guide to Stoicism, Page 46
+</p>
+</blockquote>
+</div>
+</li>
+
+<li><a id="org4eca384"></a>Pause and Compare<br />
+<div class="outline-text-5" id="text-2-7-8-3">
+<blockquote>
+<p>
+&ldquo;If you have received an impression of any pleasure, guard yourself and create a delay. Then think of the time you will enjoy the pleasure, and the time after, when you will repent and be disappointed with yourself. On the other side, imagine your happiness if you resist the temptation and get to commend yourself for the victory.&rdquo;
+</p>
+
+<p>
+&#x2013; Epictetus, Enchiridion 34
+</p>
+</blockquote>
+</div>
+</li>
+<li><a id="org406c8a5"></a>Reserve Clause<br />
+<div class="outline-text-5" id="text-2-7-8-4">
+<p>
+How does one set out to perform an action and remain aligned to their virtues if it does not happen the way one hoped? The reserve clause.
+</p>
+
+<p>
+&ldquo;I will buy bread from the shop on the way home from work today, if nothing prevents it.&rdquo;
+</p>
+
+<p>
+You may get to the shop and find they don&rsquo;t have any bread, or that you&rsquo;ve forgotten your wallet. This is where the phrase &ldquo;if nothing prevents it,&rdquo; has power. I want to do <i>x</i>, but I also understand that I do not control the outcome.
+</p>
+</div>
+</li>
+
+<li><a id="orgdc0c047"></a>You Are Just An Appearance<br />
+<div class="outline-text-5" id="text-2-7-8-5">
+<blockquote>
+<p>
+&ldquo;You are just an appearance and not at all the thing you appear to be.&rdquo;
+</p>
+
+<p>
+&#x2013; Epictetus
+</p>
+</blockquote>
+
+<p>
+Whenever an overwhelming value judgement forms in your mind, pause and repeat that line. Say no to the judgement until you&rsquo;ve examined it further.
+</p>
+</div>
+</li>
+
+<li><a id="orgb38f529"></a>Bracketing<br />
+<div class="outline-text-5" id="text-2-7-8-6">
+<p>
+When an event happens, take it at face value. After this, you can &ldquo;say something more.&rdquo; Ask a basic Stoic question. &ldquo;Is this under my control?&rdquo; This will allow you to think with a more clear mind and allow you to make a more reasoned judgement.
+</p>
+</div>
+</li>
+
+<li><a id="org9444111"></a>Circle Yourself<br />
+<div class="outline-text-5" id="text-2-7-8-7">
+<p>
+This is similar to <i>circle the present</i>. Think about what is most important to you, your ability to control your thoughts, actions, desires and aversions.
+</p>
+
+<p>
+Mentally separate this from the outside world. Remind yourself that your mind is fully under your control. Your will directs your thoughts and actions. Thinking of this will allow you to be free from outside influences, and you can choose the best action for you. The action which allows you to act according to the virtues.
+</p>
+</div>
+</li>
+
+<li><a id="org84bba6f"></a>Physical Definition - Wisdom Exercise<br />
+<div class="outline-text-5" id="text-2-7-8-8">
+<p>
+This exercise attempts to strip away your personal—and perhaps irrational—feelings concerning your desires. When you think about something you want, it helps to have a clear idea of it. Those expensive sneakers you want? They’re only shoes: leather meant to protect your feet. If you buy them they will wear out, get stained, and eventually become trash. Are shoes really worth stressing over?
+</p>
+
+<p>
+Epictetus asked his students to imagine they had a favourite cup. What is it on the most basic level? It’s ceramic. It holds drinks. It’s breakable. He told them to leave behind thoughts of “it’s painted so beautifully” and “it was a birthday present,” so they could see it as just a cup. A cup that, if broken, isn’t worth losing your good flow of life. When anything presents itself to you, particularly if it seems in some way overwhelming, stop and define it at its most basic. Do not add value judgments. Clear away its mystique so that you can move forward with a clear head.
+</p>
+
+<p>
+Marcus Aurelius would use this practice to avoid temptation. For instance, he would use it when he felt himself in danger of making a decision based on lust. 
+</p>
+
+<blockquote>
+<p>
+&ldquo;and as for sexual intercourse, it is the friction of a piece of gut and, following a sort of convulsion, the expulsion of some mucus.&rdquo;
+</p>
+
+<p>
+&#x2013; Marcus Aurelius, Meditations 6.13
+</p>
+</blockquote>
+</div>
+</li>
+
+<li><a id="org4611c72"></a>This Is Nothing to Me<br />
+<div class="outline-text-5" id="text-2-7-8-9">
+<p>
+When anything begins to take over your mind. Think of the phrase &ldquo;This is nothing to me.&rdquo;
+</p>
+
+<p>
+If you are hoping for something to happen, like getting a promotion at work and the anticipation or the outcome turns into negative thoughts. Re-frame it in your mind by saying &ldquo;This promotion is nothing to me&rdquo; It will not affect your ability to live with virtue. It will not stop you from being the best possible version of yourself.
+</p>
+
+<p>
+This stops the situation from stealing away the positive emotions you could be experiencing right now.
+</p>
+</div>
+</li>
+
+<li><a id="org97f5ade"></a>It Was Returned<br />
+<div class="outline-text-5" id="text-2-7-8-10">
+<blockquote>
+<p>
+&ldquo;The only possession the wise person has is virtue, and of this they can never be robbed. Of all else they have merely the use on loan.&rdquo;
+</p>
+
+<p>
+&#x2013; Seneca, On the Firmness of the Wise Man
+</p>
+</blockquote>
+
+<p>
+The Stoics taught that all indifferents should be viewed as being on loan. All things will come to an end, no person is immortal, and nothing lasts forever.
+</p>
+
+<p>
+If you treat everything as if it will be yours forever and you lose it. Then you are building yourself up to feel negative thoughts. Saying &ldquo;It was returned&rdquo; when you lose something will remind you that nothing lasts forever and you will learn to appreciate the present, the time you have with it or the time you had with it after it is gone.
+</p>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org5fded1d" class="outline-4">
+<h4 id="org5fded1d"><span class="section-number-4">2.7.9.</span> Seneca&rsquo;s Description of Stoicism</h4>
+<div class="outline-text-4" id="text-2-7-9">
+<blockquote>
+<p>
+&ldquo;No school has more goodness and gentleness; none has more love for human beings, nor more attention to the common good. The goal which it assigns to us is to be useful, to help others, and to take care, not only of ourselves, but of everyone in general and of each one in particular.&rdquo;
+</p>
+
+<p>
+&#x2013; Seneca  
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+&ldquo;From time to time, return to Seneca&rsquo;s description. Are you becoming someone who fits this description? If you are, you&rsquo;re doing a great job. Keep it up.&rdquo;
+</p>
+
+<p>
+&#x2013; Matthew J. Van Natta, The Beginner&rsquo;s Guide to Stoicism, Page 79
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org4a46586" class="outline-4">
+<h4 id="org4a46586"><span class="section-number-4">2.7.10.</span> What DO You Control?</h4>
+<div class="outline-text-4" id="text-2-7-10">
+<ul class="org-ul">
+<li>Your opinions about life</li>
+<li>What you pursue in life</li>
+<li>What you want</li>
+<li>What you do not want</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6ee50bf" class="outline-4">
+<h4 id="org6ee50bf"><span class="section-number-4">2.7.11.</span> Before You Sleep</h4>
+<div class="outline-text-4" id="text-2-7-11">
+<blockquote>
+<p>
+&ldquo;Let us go to our sleep with joy and gladness; let us say &lsquo;I have lived; the course which Fortune has set for me is finished.&rsquo; And If God is pleased to add another day, we should welcome it with glad hearts. A person is happiest, and is secure in his own possession of himself, who can await the morrow without apprehension. When a man has said: &lsquo;I have lived!&rsquo;, every morning he arises he receives a bonus.&rdquo;
+</p>
+
+<p>
+&#x2013; Seneca, Letters From A Stoic 12
+</p>
+</blockquote>
+
+<p>
+Seneca teaches that this practice can free you from anxiety about the future, allowing you to wake up with each fresh day and rejoice that you have been blessed with the gift of another day, another chance to live the best life you can live.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org28068fc" class="outline-4">
+<h4 id="org28068fc"><span class="section-number-4">2.7.12.</span> The Stoic Passions</h4>
+<div class="outline-text-4" id="text-2-7-12">
+</div>
+<ol class="org-ol">
+<li><a id="org8fe3b24"></a>Negative Passions<br />
+<ol class="org-ol">
+<li><a id="org5a23e25"></a>Fear<br />
+<div class="outline-text-6" id="text-2-7-12-1-1">
+<p>
+Fear is the expectation of a coming evil. Some of the feelings that flow from fear are:
+</p>
+
+<ul class="org-ul">
+<li>Terror</li>
+<li>Hesitation</li>
+<li>Shame</li>
+<li>Shock</li>
+<li>Panic</li>
+<li>Anguish (Regret)</li>
+</ul>
+
+<p>
+Shame is the fear of being disgraced, but can you be disgraced if you act with virtue? No, no one can disgrace you and no one can cause you to act without virtue.
+</p>
+
+<p>
+All fears are built on indifferents. The Dichotomy of Control will help you to see that indifferents are out of your control.
+</p>
+</div>
+</li>
+<li><a id="org467ed42"></a>Lust (Appetite)<br />
+<div class="outline-text-6" id="text-2-7-12-1-2">
+<p>
+Lust is the desire for an expected good. It is focused on the future. The future is out of your control so why concern yourself with it?
+</p>
+
+<p>
+Some of the feelings associated with Lust include:
+</p>
+
+<ul class="org-ul">
+<li>Want</li>
+<li>Hatred</li>
+<li>Contention</li>
+<li>Anger</li>
+<li>Lust</li>
+<li>Wrath</li>
+<li>Rage</li>
+</ul>
+
+<p>
+Desire only what you have and you will overcome Lust. Imagine living without dissatisfaction? If you can learn to only desire your own virtuous actions in life, then you won&rsquo;t have an overwhelming appetite for indifferent things.
+</p>
+</div>
+</li>
+<li><a id="org84209ee"></a>Delight (Pleasure)<br />
+<div class="outline-text-6" id="text-2-7-12-1-3">
+<p>
+Delight is a mistaken elation over something that seems to be good in the here and now. It includes such things as:
+</p>
+
+<ul class="org-ul">
+<li>Rejoicing at others misfortune</li>
+<li>Self-gratification</li>
+<li>Extravagant joy</li>
+</ul>
+
+<p>
+This isn&rsquo;t to say that happiness is a bad thing, far from it. Delight ties your well-being to things you own or a particular moment, all of which can be taken from you. The opposite of Delight is Joy, the state of mind that finds positivity despite the impermanence of things or moments.
+</p>
+</div>
+</li>
+
+<li><a id="orga043e6d"></a>Distress<br />
+<div class="outline-text-6" id="text-2-7-12-1-4">
+<p>
+Distress is the irrational drawing away of the mind from something already present. The following emotions come from Distress:
+</p>
+
+<ul class="org-ul">
+<li>Malice</li>
+<li>Envy</li>
+<li>Jealousy</li>
+<li>Pity</li>
+<li>Grief</li>
+<li>Worry</li>
+<li>Sorrow</li>
+<li>Annoyance</li>
+<li>Vexation</li>
+<li>Anguish</li>
+</ul>
+
+<p>
+To overcome Distress, you must make room for other good passions to flourish. One technique for this is the festival mindset:
+</p>
+
+<blockquote>
+<p>
+&ldquo;When you&rsquo;re alone you should call this tranquillity and freedom, and think of yourself like the gods; and when you are with many, you shouldn&rsquo;t call it a crowd, or trouble, or uneasiness, but festival and company, and contentedly accept it&rdquo;
+</p>
+
+<p>
+&#x2013; Epictetus, Discourses 1:12
+</p>
+</blockquote>
+
+<p>
+When you are at a festival or a concert, you have a great time and the crowds don&rsquo;t annoy you at all. You welcome the crowds, they are all there with you, and you are all sharing the same experience. These are your people. Why not try applying this to any situation?
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-org7872bcb" class="outline-4">
+<h4 id="org7872bcb"><span class="section-number-4">2.7.13.</span> What Is So Unbearable About This Moment?</h4>
+<div class="outline-text-4" id="text-2-7-13">
+<blockquote>
+<p>
+&ldquo;Do not disturb yourself by picturing your life as a whole; do not assemble in your mind the many and varied troubles which have come to you in the past and will come again in the future, but ask yourself with regard to every present difficulty: ‘What is there in this that is unbearable and beyond endurance?’ You would be ashamed to confess it! And then remind yourself that it is not the future or what has passed that afflicts you, but always the present, and the power of this is much diminished if you take it in isolation and call your mind to task if it thinks that it cannot stand up to it when taken on its own.&rdquo;
+</p>
+
+<p>
+&#x2013; Marcus Aurelius, Meditations 8:36
+</p>
+</blockquote>
+
+<p>
+Most of the emotion that comes from an event comes from your own imagination. Is this thing <i>really</i> as bad as you think it to be?
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbf7f409" class="outline-4">
+<h4 id="orgbf7f409"><span class="section-number-4">2.7.14.</span> It Seemed So to Them</h4>
+<div class="outline-text-4" id="text-2-7-14">
+<blockquote>
+<p>
+&ldquo;When any person treats you badly or speaks ill of you, remember that they do this because they think they must. It&rsquo;s not possible for them to do what you think is right, but only what seems right to them&#x2026;If you understand this you will have a milder temper with those who revile you because you can always say, &lsquo;it seemed so to them.&rsquo;&rdquo;
+</p>
+
+<p>
+&#x2013; Epictetus, Enchiridion 42
+</p>
+</blockquote>
+
+<p>
+This points back to Socrates&rsquo;s view that no one desires to do evil. They do not know any better, for if they did, they would act better. You cannot expect people to act with the knowledge you have, because they do not have access to that. This reminds me of a quote that is often falsely attributed to Marcus Aurelius:
+</p>
+
+<blockquote>
+<p>
+“Everything we hear is an opinion, not a fact. Everything we see is a perspective, not the truth.”
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org61197ee" class="outline-4">
+<h4 id="org61197ee"><span class="section-number-4">2.7.15.</span> Creating Change</h4>
+<div class="outline-text-4" id="text-2-7-15">
+<blockquote>
+<p>
+&ldquo;When you do a thing because you have determined it ought to be done, never avoid being seen doing it, even if the opinion of the multitude is going to condemn you. For if your action is wrong, then avoid doing it altogether, but if it is right, why do you fear those who will rebuke you wrongly?&rdquo;
+</p>
+
+<p>
+&#x2013; Epictetus, Enchiridion 35
+</p>
+</blockquote>
+
+<p>
+Do not be afraid to do what you believe is the right thing to do. Some or all may doubt your goals, but if it is truly the correct thing to do, then you should do it anyway, regardless of what people may say.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org320ba39" class="outline-4">
+<h4 id="org320ba39"><span class="section-number-4">2.7.16.</span> Establish A Daily Routine</h4>
+<div class="outline-text-4" id="text-2-7-16">
+<p>
+Choose some of the practices that are talked about in this book to incorporate into your daily life. Creating a Stoic routine is grounding. It will give you the strength to weather any of life&rsquo;s storms.
+</p>
+
+<p>
+Start the day with a morning orientation, journal, and think about the events and tasks today brings and how best to prepare for them.
+</p>
+
+<p>
+End your day with an evening reflection, such as the Pythagorean practice from page 32:
+&ldquo;What have I done wrong? What have I done well? What have I left that must be done tomorrow?&rdquo;
+</p>
+
+<p>
+Find the method that works for you. Matthew talks about when he first started he would write a few phrases on scraps of paper and keep them in his pocket. If he felt stressed, he would read a relevant phrase that would help him to centre himself.
+</p>
+
+<p>
+If you prepare and deal with bad times properly, they&rsquo;ll be good times. That is to say that if you live according to the virtues in every situation and virtues are the only good, then any situation can be a source of contentment for being the best possible version of yourself. This doesn&rsquo;t mean being joyful if someone has died, but rather acting according to what the situation demands of you and being rewarded for that with deep inner satisfaction.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Dougie Peart</p>
+<p class="date">Created: 2022-10-03 Mon 10:30</p>
+</div>
+</body>
+</html>
