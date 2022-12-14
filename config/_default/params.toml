@@ -62,7 +62,7 @@ typeIcon = "🎯"
 # whoami
 myname = "Dougie Peart"
 email = "contact@dougiepeart.co.uk"
-whoami = "IT Infrastructure Engineer"
+whoami = "DevOps Engineer"
 bioImageUrl = ""
 useGravatar = true
 location = "Glasgow, Scotland"
@@ -165,7 +165,7 @@ commento = false
 #  phone = ""
 #  facebook = "http://example.org/"
 #  twitter = "http://example.org/"
-  github = ""
+  github = "https://github.com/dougiepeart"
   stack-overflow = ""
   instagram = ""
   google-plus = ""
@@ -181,7 +181,7 @@ commento = false
   douban = ""
   csdn = ""
   gitlab = ""
-  mastodon = ""
+  mastodon = "https://fosstodon.org/@Dougie"
   jianshu = ""
   zhihu = ""
   signal = ""
@@ -189,7 +189,7 @@ commento = false
   matrix = ""
   xmpp = ""
   dev-to = ""
-  gitea = "https://home.dougiepeart.co.uk/git/explore/repos"
+  gitea = ""
   google-scholar = ""
 
 [donationOptions]
