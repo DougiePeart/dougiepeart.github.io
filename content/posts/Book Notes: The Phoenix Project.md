@@ -1,6 +1,7 @@
 +++
 title = "Book Notes: The Phoenix Project"
 author = ["Dougie Peart"]
+date = 2022-12-30T15:40:00+00:00
 tags = ["book", "notes", "IT", "DevOps", "reading"]
 categories = ["reading"]
 draft = false
