@@ -584,6 +584,7 @@ If you prepare and deal with bad times properly, they'll be good times. That is 
 
 
 * DONE Book Notes: The Phoenix Project :book:notes:IT:DevOps:reading:@reading:
+CLOSED: [2022-12-30 Fri 15:40]
 :PROPERTIES:
 :EXPORT_FILE_NAME: Book Notes: The Phoenix Project
 :END:
