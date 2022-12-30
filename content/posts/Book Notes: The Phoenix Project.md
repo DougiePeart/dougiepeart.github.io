@@ -7,9 +7,6 @@ categories = ["reading"]
 draft = false
 +++
 
--   State "DONE"       from "NEXT"       <span class="timestamp-wrapper"><span class="timestamp">[2022-12-30 Fri 15:43]</span></span>
-
-
 ## Source {#source}
 
 Author: Gene Kim
