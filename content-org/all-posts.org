@@ -587,7 +587,7 @@ If you prepare and deal with bad times properly, they'll be good times. That is 
 :PROPERTIES:
 :EXPORT_FILE_NAME: Book Notes: The Phoenix Project
 :END:
-- State "DONE"       from              [2022-12-30 Fri 15:32]
+- State "DONE"       from "NEXT"       [2022-12-30 Fri 15:43]
 ** Source
 Author: Gene Kim
 Title: The Phoenix Project
