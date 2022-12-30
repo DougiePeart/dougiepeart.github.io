@@ -6,71 +6,18 @@
   xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
   xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
-    <title>notes on Dougie Peart</title>
-    <link>https://dougiepeart.co.uk/tags/notes/</link>
-    <description>Recent content in notes on Dougie Peart</description>
+    <title>DevOps on Dougie Peart</title>
+    <link>https://dougiepeart.co.uk/tags/devops/</link>
+    <description>Recent content in DevOps on Dougie Peart</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>contact@dougiepeart.co.uk (Dougie Peart)</managingEditor>
     <webMaster>contact@dougiepeart.co.uk (Dougie Peart)</webMaster>
     <copyright>©2022, All Rights Reserved</copyright>
-    <lastBuildDate>Sun, 21 Aug 2022 20:51:00 +0100</lastBuildDate>
     
-        <atom:link href="https://dougiepeart.co.uk/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://dougiepeart.co.uk/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     
 
-      
-      <item>
-        <title>Book Notes: The Beginner&#39;s guide to Stoicism</title>
-        <link>https://dougiepeart.co.uk/posts/book-notes-the-beginners-guide-to-stoicism/</link>
-        <pubDate>Sun, 21 Aug 2022 20:51:00 +0100</pubDate>
-        <author>contact@dougiepeart.co.uk (Dougie Peart)</author>
-        <atom:modified>Sun, 21 Aug 2022 20:51:00 +0100</atom:modified>
-        <guid>https://dougiepeart.co.uk/posts/book-notes-the-beginners-guide-to-stoicism/</guid>
-        <description>Source Author: Matthew Van Natta
-Title: The Beginner&amp;rsquo;s Guide to Stoicism
-Year: 2019
-Genre: Philosophy
-Rating: 9/10
-The Book in 3 Sentences This book introduces the tools one needs to deal with life&amp;rsquo;s challenges in a calm and composed manner. You already possess the keys to living a fulfilling and joyous life. Despite having been created centuries ago, its teachings still apply to modern life.
-Impressions I found it immensely useful.</description>
-        
-        <dc:creator>[Dougie Peart]</dc:creator>
-        
-        
-        
-        
-          
-            
-              <category>book</category>
-            
-          
-            
-              <category>notes</category>
-            
-          
-            
-              <category>stoicism</category>
-            
-          
-            
-              <category>philosophy</category>
-            
-          
-            
-              <category>reading</category>
-            
-          
-        
-        
-          
-            
-              <category>reading</category>
-            
-          
-        
-        
-      </item>
       
       <item>
         <title>Book Notes: The Phoenix Project</title>
