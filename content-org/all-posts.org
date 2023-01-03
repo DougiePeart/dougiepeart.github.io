@@ -723,7 +723,7 @@ Digital minimalists derive significant satisfaction from their general commitmen
 #+end_quote
 
 #+begin_quote
-▪ As he notes in Walden, working a large farm, as many of his Concord neighbors did, required large, stressful mortgages, the need to maintain numerous pieces of equipment, and endless, demanding labor. He describes these farmer neighbors as “crushed and smothered under [their] load” and famously lumps them into the “mass of men lead[ing] lives of quiet desperation.”
+As he notes in Walden, working a large farm, as many of his Concord neighbors did, required large, stressful mortgages, the need to maintain numerous pieces of equipment, and endless, demanding labor. He describes these farmer neighbors as “crushed and smothered under [their] load” and famously lumps them into the “mass of men lead[ing] lives of quiet desperation.”
 Thoreau then asks what benefits these worn-down farmers receive from the extra profit they eke out. As he proved in his Walden experiment, this extra work is not enabling the farmers to escape savage conditions: Thoreau was able to satisfy all of his basic needs quite comfortably with the equivalent of one day of work per week. What these farmers are actually gaining from all the life they sacrifice is slightly nicer stuff: venetian blinds, a better quality copper pot, perhaps a fancy wagon for traveling back and forth to town more efficiently.
 #+end_quote
 We seem to be too obsessed with achieving the most in life and stretching ourselves, but do we need to stretch ourselves that far in every case?
@@ -771,18 +771,18 @@ Newport contends that remaining in constant social contact with friends and fami
 ***** PRACTICE: CONSOLIDATE TEXTING
 Newport suggests limiting your texting time to certain portions of the day and treating them more like emails. This allows you to be in control of how text messages fit into your day. Leaving them to when you choose to interact, rather than interrupting you at the whims of others.
 #+begin_quote
-▪ When you’re in this mode, text messages become like emails: if you want to see if anyone has sent you something, you must turn on your phone and open the app. You can now schedule specific times for texting—consolidated sessions in which you go through the backlog of texts you received since the last check, sending responses as needed and perhaps even having some brief back-and-forth interaction before apologizing that you have to go, turning the phone back to Do Not Disturb mode, and continuing with your day.
+When you’re in this mode, text messages become like emails: if you want to see if anyone has sent you something, you must turn on your phone and open the app. You can now schedule specific times for texting—consolidated sessions in which you go through the backlog of texts you received since the last check, sending responses as needed and perhaps even having some brief back-and-forth interaction before apologizing that you have to go, turning the phone back to Do Not Disturb mode, and continuing with your day.
 #+end_quote
 
 ***** PRACTICE: HOLD CONVERSATION OFFICE HOURS
 Having conversation office hours seems to be a great idea to implement into your life. It allows people to avoid the anxiety of phoning you in case you are busy.
 #+begin_quote
-▪ I learned it from a technology executive in Silicon Valley who innovated a novel strategy for supporting high-quality interaction with friends and family: he tells them that he’s always available to talk on the phone at 5:30 p.m. on weekdays. There’s no need to schedule a conversation or let him know when you plan to call—just dial him up. As it turns out, 5:30 is when he begins his traffic-clogged commute home in the Bay Area. He decided at some point that he wanted to put this daily period of car confinement to good use, so he invented the 5:30 rule.
+I learned it from a technology executive in Silicon Valley who innovated a novel strategy for supporting high-quality interaction with friends and family: he tells them that he’s always available to talk on the phone at 5:30 p.m. on weekdays. There’s no need to schedule a conversation or let him know when you plan to call—just dial him up. As it turns out, 5:30 is when he begins his traffic-clogged commute home in the Bay Area. He decided at some point that he wanted to put this daily period of car confinement to good use, so he invented the 5:30 rule.
 #+end_quote
 
 If someone texts you trying to initiate a low-value conversation over messaging you can instead reply to their text inviting them to call at an allotted time:
 #+begin_quote
-▪ I’d love to get up to speed on what’s going on in your life, call me at 5:30 sometime.”
+I’d love to get up to speed on what’s going on in your life, call me at 5:30 sometime.”
 #+end_quote
 
 **** 6: Reclaim Leisure
@@ -800,7 +800,7 @@ This brings us to our first Leasure lesson.
 
 ***** Leisure Lesson #2: Use skills to produce valuable things in the physical world.
 #+begin_quote
-▪ fully embrace Rogowski’s closing advice: “Leave good evidence of yourself. Do good work.”
+fully embrace Rogowski’s closing advice: “Leave good evidence of yourself. Do good work.”
 #+end_quote
 Try to use your leisure time to produce something that you are proud of, this could be a physical object through the craft of woodwork, or a piece of music.
 
@@ -814,7 +814,7 @@ Being a digital minimalist does not mean swearing off social media altogether. Y
 
 ***** PRACTICE: JOIN SOMETHING
 #+begin_quote
-▪ In 1727, Franklin created a social club called the Junto, which he describes as follows in his autobiography:
+In 1727, Franklin created a social club called the Junto, which he describes as follows in his autobiography:
 I had form’d most of my ingenious acquaintance into a club of mutual improvement, which we called the Junto; we met on Friday evenings. The rules that I drew up required that every member, in his turn, should produce one or more queries on any point of Morals, Politics, or Natural Philosophy, to be discuss’d by the company; and once in three months produce and read an essay of his own writing, on any subject he pleased.
 #+end_quote
 Perhaps we should all take a leaf out of Franklin's book, if we don't have a group of like-minded individuals we can join, why not try creating the group ourselves?
