@@ -1,13 +1,11 @@
 +++
 title = "Book Notes: Digital Minimalism"
 author = ["Dougie Peart"]
+date = 2023-01-03T20:52:00+00:00
 tags = ["books", "notes", "reading", "productivity"]
 categories = ["reading"]
 draft = false
 +++
-
--   State "DONE"       from "NEXT"       <span class="timestamp-wrapper"><span class="timestamp">[2023-01-03 Tue 20:47]</span></span>
-
 
 ## Source {#source}
 
