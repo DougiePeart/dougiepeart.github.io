@@ -62,7 +62,7 @@ typeIcon = "🎯"
 # whoami
 myname = "Dougie Peart"
 email = "contact@dougiepeart.co.uk"
-whoami = "DevOps Engineer"
+whoami = ""
 bioImageUrl = ""
 useGravatar = true
 location = "Glasgow, Scotland"
